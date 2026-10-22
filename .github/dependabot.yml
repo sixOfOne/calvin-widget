@@ -1,0 +1,8 @@
+# Ask Dependabot to open pull requests when a GitHub Action release is newer
+# than the commit SHA pinned in .github/workflows.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly

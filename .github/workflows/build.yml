@@ -1,0 +1,46 @@
+# Name shown on the Actions tab.
+name: Build
+
+# When this workflow runs.
+on:
+  # A pull request, including from a fork. The workflow file from the PR is used.
+  pull_request:
+  # A push to the default branch. Other branches are covered when their PR is opened.
+  push:
+    # Limit push builds to main so a branch push and its pull request are not both built.
+    branches:
+      - main
+
+# What the automatic GITHUB_TOKEN is allowed to do.
+# contents: read lets the job clone the repo. It cannot push commits or change settings.
+permissions:
+  contents: read
+
+# The work to do. This file has one job.
+jobs:
+  # Job id. The Actions log uses this name.
+  build:
+    # GitHub-hosted Mac. xcodebuild and the Apple SDK are not available on Linux runners.
+    runs-on: macos-latest
+    # Ordered list of commands for this job.
+    steps:
+      # Download the repository into the runner.
+      - name: Check out the repository
+        # Full commit SHA, not a moving tag. The comment records the release it came from.
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      # Compile the shared scheme. The scheme builds the app, which embeds the widget.
+      - name: Build CalvinWidget
+        # CODE_SIGNING_ALLOWED=NO turns signing off.
+        # CODE_SIGNING_REQUIRED=NO and CODE_SIGN_IDENTITY=- stop Xcode from demanding a team.
+        # generic/platform=macOS builds for Mac without picking a specific machine.
+        run: >
+          xcodebuild
+          -project CalvinWidget.xcodeproj
+          -scheme CalvinWidget
+          -configuration Debug
+          -destination "generic/platform=macOS"
+          CODE_SIGNING_ALLOWED=NO
+          CODE_SIGNING_REQUIRED=NO
+          CODE_SIGN_IDENTITY=-
+          build

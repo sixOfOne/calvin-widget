@@ -1,0 +1,33 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode user state and build products
+xcuserdata/
+*.xcuserstate
+*.xcscmblueprint
+*.xccheckout
+DerivedData/
+build/
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+
+# Signing material. Never commit these.
+*.mobileprovision
+*.provisionprofile
+*.p12
+*.cer
+*.certSigningRequest
+
+# Local team id and optional bundle prefix.
+# Copy Config/Local.xcconfig.example to Config/Local.xcconfig.
+Local.xcconfig
+
+# Editors and local scratch
+.idea/
+*.swp
+agent-tools/

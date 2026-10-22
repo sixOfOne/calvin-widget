@@ -1,0 +1,15 @@
+// Copy this file to Config/Local.xcconfig (same folder) and edit the copy.
+// Config/Local.xcconfig is gitignored. Do not commit your team id.
+//
+//   cp Config/Local.xcconfig.example Config/Local.xcconfig
+//
+// Team ID: Xcode → Settings → Accounts → your Apple ID → Team ID.
+// A free personal team works. Replace YOUR_TEAM_ID below.
+
+DEVELOPMENT_TEAM = YOUR_TEAM_ID
+
+// Optional. Uncomment to replace the com.example bundle prefix.
+// The app id becomes $(BUNDLE_ID_PREFIX).CalvinWidget
+// The widget id becomes $(BUNDLE_ID_PREFIX).CalvinWidget.widget
+// The App Group id becomes $(TeamIdentifierPrefix)$(BUNDLE_ID_PREFIX).CalvinWidget.shared
+// BUNDLE_ID_PREFIX = com.yourname

@@ -1,0 +1,531 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C0FFEE000000000000000024 /* CalvinWidgetApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEE000000000000000018 /* CalvinWidgetApp.swift */; };
+		C0FFEE000000000000000025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEE000000000000000019 /* ContentView.swift */; };
+		C0FFEE000000000000000026 /* StripLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000001C /* StripLoader.swift */; };
+		C0FFEE000000000000000027 /* StripHTML.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000001D /* StripHTML.swift */; };
+		C0FFEE000000000000000028 /* StripImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000001E /* StripImage.swift */; };
+		C0FFEE000000000000000029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000001A /* Assets.xcassets */; };
+		C0FFEE00000000000000002A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FFEE000000000000000022 /* SwiftUI.framework */; };
+		C0FFEE00000000000000002D /* StripImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000001E /* StripImage.swift */; };
+		C0FFEE00000000000000002E /* CalvinWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000001F /* CalvinWidgetExtension.swift */; };
+		C0FFEE00000000000000002F /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FFEE000000000000000022 /* SwiftUI.framework */; };
+		C0FFEE000000000000000030 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FFEE000000000000000023 /* WidgetKit.framework */; };
+		C0FFEE000000000000000031 /* CalvinWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C0FFEE000000000000000005 /* CalvinWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		C0FFEE000000000000000040 /* StripWebLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEE000000000000000038 /* StripWebLoader.swift */; };
+		C0FFEE000000000000000041 /* RefreshScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEE000000000000000039 /* RefreshScheduler.swift */; };
+		C0FFEE000000000000000042 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000003A /* MenuBarView.swift */; };
+		C0FFEE000000000000000043 /* StripStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000003B /* StripStore.swift */; };
+		C0FFEE000000000000000044 /* StripStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000003B /* StripStore.swift */; };
+		C0FFEE000000000000000045 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000003C /* WebKit.framework */; };
+		C0FFEE000000000000000046 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FFEE000000000000000023 /* WidgetKit.framework */; };
+		C0FFEE000000000000000047 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000003D /* Security.framework */; };
+		C0FFEE000000000000000048 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000003D /* Security.framework */; };
+		C0FFEE000000000000000049 /* ServiceManagement.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000003E /* ServiceManagement.framework */; };
+		C0FFEE00000000000000004A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0FFEE00000000000000003F /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C0FFEE00000000000000000E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C0FFEE000000000000000001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C0FFEE000000000000000003;
+			remoteInfo = CalvinWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C0FFEE00000000000000000C /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C0FFEE000000000000000031 /* CalvinWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C0FFEE000000000000000004 /* CalvinWidget.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CalvinWidget.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0FFEE000000000000000005 /* CalvinWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CalvinWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		C0FFEE000000000000000018 /* CalvinWidgetApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalvinWidgetApp.swift; sourceTree = "<group>"; };
+		C0FFEE000000000000000019 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C0FFEE00000000000000001A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C0FFEE00000000000000001B /* CalvinWidget.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalvinWidget.entitlements; sourceTree = "<group>"; };
+		C0FFEE00000000000000001C /* StripLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripLoader.swift; sourceTree = "<group>"; };
+		C0FFEE00000000000000001D /* StripHTML.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripHTML.swift; sourceTree = "<group>"; };
+		C0FFEE00000000000000001E /* StripImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripImage.swift; sourceTree = "<group>"; };
+		C0FFEE00000000000000001F /* CalvinWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalvinWidgetExtension.swift; sourceTree = "<group>"; };
+		C0FFEE000000000000000020 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0FFEE000000000000000021 /* CalvinWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CalvinWidgetExtension.entitlements; sourceTree = "<group>"; };
+		C0FFEE000000000000000022 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		C0FFEE000000000000000023 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		C0FFEE000000000000000038 /* StripWebLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripWebLoader.swift; sourceTree = "<group>"; };
+		C0FFEE000000000000000039 /* RefreshScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshScheduler.swift; sourceTree = "<group>"; };
+		C0FFEE00000000000000003A /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		C0FFEE00000000000000003B /* StripStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StripStore.swift; sourceTree = "<group>"; };
+		C0FFEE00000000000000003C /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		C0FFEE00000000000000003D /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		C0FFEE00000000000000003E /* ServiceManagement.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ServiceManagement.framework; path = System/Library/Frameworks/ServiceManagement.framework; sourceTree = SDKROOT; };
+		C0FFEE00000000000000003F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		C0FFEE00000000000000004B /* Base.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Base.xcconfig; sourceTree = "<group>"; };
+		C0FFEE00000000000000004C /* Local.xcconfig.example */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.xcconfig.example; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C0FFEE00000000000000000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FFEE00000000000000002A /* SwiftUI.framework in Frameworks */,
+				C0FFEE000000000000000045 /* WebKit.framework in Frameworks */,
+				C0FFEE000000000000000046 /* WidgetKit.framework in Frameworks */,
+				C0FFEE000000000000000047 /* Security.framework in Frameworks */,
+				C0FFEE000000000000000049 /* ServiceManagement.framework in Frameworks */,
+				C0FFEE00000000000000004A /* AppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0FFEE00000000000000000B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FFEE00000000000000002F /* SwiftUI.framework in Frameworks */,
+				C0FFEE000000000000000030 /* WidgetKit.framework in Frameworks */,
+				C0FFEE000000000000000048 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C0FFEE000000000000000032 /* CalvinWidget */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFEE000000000000000018 /* CalvinWidgetApp.swift */,
+				C0FFEE000000000000000019 /* ContentView.swift */,
+				C0FFEE000000000000000038 /* StripWebLoader.swift */,
+				C0FFEE000000000000000039 /* RefreshScheduler.swift */,
+				C0FFEE00000000000000003A /* MenuBarView.swift */,
+				C0FFEE00000000000000001A /* Assets.xcassets */,
+				C0FFEE00000000000000001B /* CalvinWidget.entitlements */,
+			);
+			path = CalvinWidget;
+			sourceTree = "<group>";
+		};
+		C0FFEE000000000000000033 /* CalvinWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFEE00000000000000001F /* CalvinWidgetExtension.swift */,
+				C0FFEE000000000000000020 /* Info.plist */,
+				C0FFEE000000000000000021 /* CalvinWidgetExtension.entitlements */,
+			);
+			path = CalvinWidgetExtension;
+			sourceTree = "<group>";
+		};
+		C0FFEE000000000000000034 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFEE00000000000000001C /* StripLoader.swift */,
+				C0FFEE00000000000000001D /* StripHTML.swift */,
+				C0FFEE00000000000000001E /* StripImage.swift */,
+				C0FFEE00000000000000003B /* StripStore.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		C0FFEE000000000000000035 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFEE000000000000000022 /* SwiftUI.framework */,
+				C0FFEE000000000000000023 /* WidgetKit.framework */,
+				C0FFEE00000000000000003C /* WebKit.framework */,
+				C0FFEE00000000000000003D /* Security.framework */,
+				C0FFEE00000000000000003E /* ServiceManagement.framework */,
+				C0FFEE00000000000000003F /* AppKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C0FFEE000000000000000036 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFEE000000000000000004 /* CalvinWidget.app */,
+				C0FFEE000000000000000005 /* CalvinWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C0FFEE00000000000000004D /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C0FFEE00000000000000004B /* Base.xcconfig */,
+				C0FFEE00000000000000004C /* Local.xcconfig.example */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		C0FFEE000000000000000037 = {
+			isa = PBXGroup;
+			children = (
+				C0FFEE00000000000000004D /* Config */,
+				C0FFEE000000000000000032 /* CalvinWidget */,
+				C0FFEE000000000000000033 /* CalvinWidgetExtension */,
+				C0FFEE000000000000000034 /* Shared */,
+				C0FFEE000000000000000035 /* Frameworks */,
+				C0FFEE000000000000000036 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C0FFEE000000000000000002 /* CalvinWidget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0FFEE00000000000000000F /* Build configuration list for PBXNativeTarget "CalvinWidget" */;
+			buildPhases = (
+				C0FFEE000000000000000006 /* Sources */,
+				C0FFEE00000000000000000A /* Frameworks */,
+				C0FFEE000000000000000008 /* Resources */,
+				C0FFEE00000000000000000C /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0FFEE00000000000000000D /* PBXTargetDependency */,
+			);
+			name = CalvinWidget;
+			productName = CalvinWidget;
+			productReference = C0FFEE000000000000000004 /* CalvinWidget.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C0FFEE000000000000000003 /* CalvinWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0FFEE000000000000000010 /* Build configuration list for PBXNativeTarget "CalvinWidgetExtension" */;
+			buildPhases = (
+				C0FFEE000000000000000007 /* Sources */,
+				C0FFEE00000000000000000B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CalvinWidgetExtension;
+			productName = CalvinWidgetExtension;
+			productReference = C0FFEE000000000000000005 /* CalvinWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C0FFEE000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1600;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					C0FFEE000000000000000002 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+					C0FFEE000000000000000003 = {
+						CreatedOnToolsVersion = 16.0;
+					};
+				};
+			};
+			buildConfigurationList = C0FFEE000000000000000011 /* Build configuration list for PBXProject "CalvinWidget" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C0FFEE000000000000000037;
+			productRefGroup = C0FFEE000000000000000036 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C0FFEE000000000000000002 /* CalvinWidget */,
+				C0FFEE000000000000000003 /* CalvinWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C0FFEE000000000000000008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FFEE000000000000000029 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C0FFEE000000000000000006 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FFEE000000000000000024 /* CalvinWidgetApp.swift in Sources */,
+				C0FFEE000000000000000025 /* ContentView.swift in Sources */,
+				C0FFEE000000000000000040 /* StripWebLoader.swift in Sources */,
+				C0FFEE000000000000000041 /* RefreshScheduler.swift in Sources */,
+				C0FFEE000000000000000042 /* MenuBarView.swift in Sources */,
+				C0FFEE000000000000000026 /* StripLoader.swift in Sources */,
+				C0FFEE000000000000000027 /* StripHTML.swift in Sources */,
+				C0FFEE000000000000000028 /* StripImage.swift in Sources */,
+				C0FFEE000000000000000043 /* StripStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0FFEE000000000000000007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C0FFEE00000000000000002E /* CalvinWidgetExtension.swift in Sources */,
+				C0FFEE00000000000000002D /* StripImage.swift in Sources */,
+				C0FFEE000000000000000044 /* StripStore.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C0FFEE00000000000000000D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C0FFEE000000000000000003 /* CalvinWidgetExtension */;
+			targetProxy = C0FFEE00000000000000000E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		C0FFEE000000000000000012 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0FFEE00000000000000004B /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C0FFEE000000000000000013 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0FFEE00000000000000004B /* Base.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C0FFEE000000000000000014 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0FFEE00000000000000004B /* Base.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CalvinWidget/CalvinWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_DEBUG_DYLIB = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CalvinGroupSuffix = "$(APP_GROUP_SUFFIX)";
+				INFOPLIST_KEY_CFBundleDisplayName = "Calvin and Hobbes";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSHighResolutionCapable = YES;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).CalvinWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C0FFEE000000000000000015 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0FFEE00000000000000004B /* Base.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CalvinWidget/CalvinWidget.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_DEBUG_DYLIB = NO;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CalvinGroupSuffix = "$(APP_GROUP_SUFFIX)";
+				INFOPLIST_KEY_CFBundleDisplayName = "Calvin and Hobbes";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
+				INFOPLIST_KEY_NSHighResolutionCapable = YES;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).CalvinWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		C0FFEE000000000000000016 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0FFEE00000000000000004B /* Base.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = CalvinWidgetExtension/CalvinWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CalvinWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).CalvinWidget.widget";
+				PRODUCT_BUNDLE_PACKAGE_TYPE = "XPC!";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		C0FFEE000000000000000017 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0FFEE00000000000000004B /* Base.xcconfig */;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = CalvinWidgetExtension/CalvinWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_INJECT_BASE_ENTITLEMENTS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = CalvinWidgetExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(BUNDLE_ID_PREFIX).CalvinWidget.widget";
+				PRODUCT_BUNDLE_PACKAGE_TYPE = "XPC!";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C0FFEE00000000000000000F /* Build configuration list for PBXNativeTarget "CalvinWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0FFEE000000000000000014 /* Debug */,
+				C0FFEE000000000000000015 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0FFEE000000000000000010 /* Build configuration list for PBXNativeTarget "CalvinWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0FFEE000000000000000016 /* Debug */,
+				C0FFEE000000000000000017 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0FFEE000000000000000011 /* Build configuration list for PBXProject "CalvinWidget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C0FFEE000000000000000012 /* Debug */,
+				C0FFEE000000000000000013 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C0FFEE000000000000000001 /* Project object */;
+}

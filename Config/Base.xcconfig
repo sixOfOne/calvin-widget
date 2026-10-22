@@ -1,0 +1,20 @@
+// Shared build settings. This file is committed.
+//
+// Your Apple Team ID lives in Local.xcconfig, which is gitignored.
+// Copy Config/Local.xcconfig.example to Config/Local.xcconfig and fill it in.
+//
+// Local.xcconfig is included last on purpose. Values there replace the defaults
+// below. Leave this include at the bottom of the file.
+
+// Reverse-DNS prefix for the bundle ids. Forks can override this locally.
+BUNDLE_ID_PREFIX = com.example
+
+// App Group id without the team prefix. The entitlements prepend $(TeamIdentifierPrefix),
+// which codesign replaces with your Team ID and a dot when the app is signed.
+// Do not put a Team ID in this value.
+APP_GROUP_SUFFIX = $(BUNDLE_ID_PREFIX).CalvinWidget.shared
+
+// Empty unless Local.xcconfig sets it. Do not commit a real team id here.
+DEVELOPMENT_TEAM =
+
+#include? "Local.xcconfig"
